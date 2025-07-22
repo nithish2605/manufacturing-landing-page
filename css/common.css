@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary:#f5f7f9;
+    --secondary:#0b0f12;
+    --accent:rgb(12, 54, 60);
+    --accent-dark:#0d343c;
+    --acent-light:#e2ffc8;
+}
