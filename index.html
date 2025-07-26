@@ -5,14 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prodmast | Home</title>
+    <!-- css for icons -->
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- css stylesheet -->
     <link rel="stylesheet" href="css/common.css">
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
 </head>
+
 <body>
     <!-- header section starts here -->
     <section class="header-section">
@@ -31,6 +41,7 @@
             <div class="sign-up">
                 <a href="#">Sign Up</a>
             </div>
+              <i class="fa-solid fa-bars hamburger" style="font-size: 2rem;"></i>
         </header>
     </section>
     <!-- header section ends here -->
@@ -85,34 +96,37 @@
                     </div>
                 </div>
             </div>
-            <div class="main-card-container">
-                <div class="review">
+            <div class="owl-carousel main-card-container">
+                <!-- <div class="review">
                     <i class="fas fa-star" style="color:#ecc844"></i>
                     <i class="fas fa-star" style="color:#ecc844"></i>
                     <i class="fas fa-star" style="color:#ecc844"></i>
                     <i class="fas fa-star" style="color:#ecc844"></i>
                     <i class="fas fa-star" style="color:#ecc844"></i>
                     <span style="color:var(--dark);">5.0</span>
-                    <div class="review-link" style="margin-top: 0.3rem;"><span>From 80+</span><a href="#">reviews</a></div>
-                </div>
+                    <div class="review-link" style="margin-top: 0.3rem;"><span>From 80+</span><a href="#">reviews</a>
+                    </div>
+                </div> -->  
                 <div class="company-img">
-                   <img src="img/company-img.png" alt="">
+                    <img src="img/company-img.png" alt="">
                 </div>
                 <div class="overview-1">
                     <div class="content">
-                         <h1>100+</h1>
-                         <p>Our Esteemed Clients and partners</p>
-                    </div> 
+                        <h1>100+</h1>
+                        <p>Our Esteemed Clients and partners</p>
+                    </div>
                 </div>
                 <div class="overview-2">
                     <div class="projects-card-icon">
                         <i class="fi fi-rr-table-columns layout-icon"></i>
-                        <i class="fa-solid fa-ellipsis-vertical"></i> 
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
                     </div>
                     <div class="content">
-                        <p style="margin-bottom: 0.6rem;">Total Projects <span style="color:var(--secondary);"><i class="fa-solid fa-circle-arrow-up"></i> 8%</span></p>
+                        <p style="margin-bottom: 0.6rem;">Total Projects <span style="color:var(--secondary);"><i
+                                    class="fa-solid fa-circle-arrow-up"></i> 8%</span></p>
                         <h1 style="margin-bottom: 0.6rem;">1951+</h1>
-                          <p style="margin-bottom: 0.6rem;">Increase of <span style="color:rgb(15, 145, 108); font-weight: 600;">126</span> this month </p>
+                        <p style="margin-bottom: 0.6rem;">Increase of <span
+                                style="color:rgb(15, 145, 108); font-weight: 600;">126</span> this month </p>
                     </div>
                 </div>
                 <div class="overview-3">
@@ -132,6 +146,10 @@
     </section>
     <!--main section ends here -->
 
+<!-- Owl Carousel JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<!-- main js -->
+ <script src="js/main.js"></script>
 </body>
-
 </html>

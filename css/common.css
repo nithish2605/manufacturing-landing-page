@@ -14,13 +14,11 @@
     --text-color-dark:#2b2e2f;
      font-family: 'Manrope', sans-serif;
 }
-
 img{
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
-
 .header-section{
     background-color: var(--light);
     padding: 1rem;
@@ -28,11 +26,11 @@ img{
 header{
     max-width: 1400px;
     margin: 0 auto;
+    padding:0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-
 .nav-links{
     display: flex;
     justify-content:center;
@@ -47,7 +45,6 @@ header{
     color:var(--dark);
     cursor:pointer;
 }
-
 .sign-up a{
     text-decoration: none;
     background-color: var(--secondary);
@@ -62,17 +59,16 @@ header{
     background-color: var(--accent);
     color: var(--dark);
 }
-
 .main-section{
     padding:4rem 0;
     background-color: var(--primary);
-  }
+}
 .main-container{
     max-width: 1400px;
     margin: 0 auto;
+    padding:0 2rem;
     text-align: center;
 }
-
 .main-heading{
     color: var(--heading);
     font-size: 2.2rem;
@@ -85,8 +81,8 @@ header{
 .action-container{
     display: grid;
     grid-template-columns: 1fr auto 1fr;
+    gap: 1rem;
 }
-
 .icons-1{
     display: flex;
     align-items: center;
@@ -115,7 +111,6 @@ header{
     padding: 0.5rem ;
     border-radius:50%;
 }
-
 .get-start-section p{
     font-size: 1.2rem;
     margin-bottom: 3.3rem;
@@ -131,12 +126,10 @@ header{
     border: 1px solid var(--secondary);
     transition: all 0.2s ease-in-out;
 }
-
 .btn-get-start:hover{
     background-color: var(--accent);
     color:var(--dark);
 }
-
 .btn-try-demo{
     text-decoration: none;
     background-color: var(--light);
@@ -147,19 +140,16 @@ header{
     font-weight: 600;
     border:solid 1px #d3dee7;
 }
-
 .btn-try-demo:hover{
     background-color: var(--accent);
     color: var(--dark);
 }
-
 .icons-2{
     display: flex;
     justify-content: end;
     align-items: end;
     position: relative;
 }
-
 .wave-icon{
    border: 2px solid var(--secondary);
    border-radius: 50%;
@@ -167,7 +157,6 @@ header{
    margin-right: 4rem;
    font-size: 1.4rem;
 }
- 
 .bar-icon{
     font-size: 1.4rem;
     position: absolute;
@@ -177,7 +166,6 @@ header{
     padding:0.8rem 1rem ;
     background-color: var(--accent);
 }
-
 .main-card-container{
     display: grid;
     grid-template-columns: 1fr 200px 300px 200px 1fr;
@@ -186,11 +174,16 @@ header{
     align-items: end;
     position: relative;
 }
-
 .company-img img{
     border-radius: 0.8rem;
 }
-
+/* .owl-carousel {
+    max-width: 1400px;
+} */
+.owl-stage{
+  display: flex;
+  align-items: end;
+}
 
 .overview-1,.overview-3{
     background-color: var(--secondary);
@@ -204,7 +197,6 @@ header{
     justify-content: center;
     line-height: 1.5rem;
 }
-
 .overview-1 p,.overview-3 p{
     margin-top: 1rem;
 }
@@ -216,7 +208,6 @@ header{
 .overview-2 .content{
     text-align: left;
 }
-
 .projects-card-icon{
     display: flex;
     justify-content: space-between;
@@ -234,10 +225,9 @@ header{
     background-color: var(--accent);
     color: var(--dark);
 }
-
 .overview-4{
     background-color: var(--secondary);
-    height: 22.6rem;
+    height: 22rem;
     align-content: end;
     color: var(--light);
     padding: 2rem;
@@ -249,10 +239,36 @@ header{
     line-height: 1.8rem;
     text-align: left;
 }
-
-.review{
+ .hamburger{
+    display: none;
+ }
+/* .review{
     position: absolute;
     top: 0;
     left: 50%;
     translate:-50px;
+} */
+
+
+/* Media Queries */
+@media (max-width:992px) {
+    .nav-links{
+        display: block;
+        position:absolute;
+        right: 0;
+        top: 5.5rem;
+        background-color: white;
+        padding: 2rem
+    }
+    .nav-links li{
+        padding: 0.5rem;
+        width: 100vw;
+        text-align: center;
+    }
+    .sign-up{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
 }
