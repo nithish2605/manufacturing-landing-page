@@ -39,11 +39,18 @@ header{
     list-style: none;
     font-weight: 500;
     color: var(--text-color-dark);
-    transition: all 0.3s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    will-change:auto;
 }
 .nav-links li:hover{
-    color:var(--dark);
+    color:var(--secondary);
+    font-weight: 600;
     cursor:pointer;
+}
+.sign-up{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
 }
 .sign-up a{
     text-decoration: none;
@@ -153,7 +160,7 @@ header{
 .wave-icon{
    border: 2px solid var(--secondary);
    border-radius: 50%;
-   padding:0.8rem 1rem ;
+   padding:0.6rem 0.8rem ;
    margin-right: 4rem;
    font-size: 1.4rem;
 }
@@ -241,6 +248,9 @@ header{
 }
  .hamburger{
     display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #153f45;
  }
 /* .review{
     position: absolute;
@@ -248,12 +258,15 @@ header{
     left: 50%;
     translate:-50px;
 } */
+ .sign-up-res{
+    display: none;
+ }
 
 
 /* Media Queries */
 @media (max-width:992px) {
     .nav-links{
-        display: block;
+        display:none;
         position:absolute;
         right: 0;
         top: 5.5rem;
@@ -265,10 +278,15 @@ header{
         width: 100vw;
         text-align: center;
     }
-    .sign-up{
+    .hamburger{
+        display: block;
+    }
+}
+@media (max-width:772px) {
+     .sign-up a{
         display: none;
     }
-    .hamburger{
+    .sign-up-res{
         display: block;
     }
 }

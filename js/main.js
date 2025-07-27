@@ -1,4 +1,5 @@
 
+//owl carousel
 $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
         loop: true,
@@ -17,3 +18,16 @@ $(document).ready(function () {
     });
 });
 
+//Responsive nav bar 
+var menubar=document.querySelector(".hamburger");
+var navlinks=document.querySelector(".nav-links");
+console.log(menubar);
+console.log(navlinks);
+
+menubar.addEventListener('click',()=>{
+    if(navlinks.style.display == 'block'){
+       navlinks.style.display="none";
+    }else{
+        navlinks.style.display="block";
+    }
+});
