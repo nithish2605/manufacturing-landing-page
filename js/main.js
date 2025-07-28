@@ -18,16 +18,31 @@ $(document).ready(function () {
     });
 });
 
-//Responsive nav bar 
+// Responsive nav bar using GSAP // 
 var menubar=document.querySelector(".hamburger");
 var navlinks=document.querySelector(".nav-links");
-console.log(menubar);
-console.log(navlinks);
-
-menubar.addEventListener('click',()=>{
-    if(navlinks.style.display == 'block'){
-       navlinks.style.display="none";
-    }else{
-        navlinks.style.display="block";
+let navOpen = false;
+menubar.addEventListener('click', (e) => {
+    // e.stopPropagation();
+    if (!navOpen) {
+        navlinks.classList.add("show");
+        gsap.to(navlinks, { x: 0, opacity: 1, duration: 0.1, ease: "power2.out" });
+        navOpen = true;
+    } else {    
+        gsap.to(navlinks, { x: -130, opacity: 0, duration: 0.1, ease: "power2.in", onComplete: () => {
+            navlinks.classList.remove("show");
+            gsap.set(navlinks, { clearProps: "all" });
+            navOpen = false;
+        }});
+    }
+});
+//when clicking outside the navlinks, close the navlink
+document.addEventListener('click', function(e) {
+    if (navOpen && !navlinks.contains(e.target) && !menubar.contains(e.target)) {
+        gsap.to(navlinks, { x: -130, opacity: 0, duration: 0.1, ease: "power2.in", onComplete: () => {
+            navlinks.classList.remove("show");
+            gsap.set(navlinks, { clearProps: "all" });
+            navOpen = false;
+        }});
     }
 });
