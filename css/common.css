@@ -276,11 +276,38 @@ header{
 footer{
     max-width: 1400px;
     margin: 0 auto;
-    padding:0 2rem;
+    padding:2rem 2rem;
     display: grid;
-    grid-template-columns: 1fr 0.5fr 0.5fr 0.7fr 1fr;
-    gap: 1rem;
-    color:var(--light);
+    grid-template-columns: 1.8fr 0.5fr 1fr 1fr 1fr;
+    gap: 1.5rem;
+    /* color:var(--light); */
+    color: var(--text-color);
+    border-bottom: solid 1px var(--text-color);
+    
+}
+.logo-content{
+    padding-right: 1rem;
+}
+.company h3,.industires h3,.products h3,.getintouch h3{
+    margin-bottom: 1rem;
+    color: var(--light);
+}
+.company p,.industires p,.products p,.getintouch p{
+    padding: 0.5rem 0;
+    cursor: pointer;
+}
+
+.footer-end{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.policy{
+    display: flex;
+    gap: 2rem;
 }
 /* Media Queries */
 @media (max-width:992px) {
