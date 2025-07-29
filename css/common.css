@@ -419,4 +419,7 @@ footer{
     .footer-end{
         gap: 1rem;
     }
+    .btn-get-start{
+        margin-right: 0;
+    }
 }
