@@ -195,7 +195,11 @@ header{
 /* .owl-carousel {
     max-width: 1400px;
 } */
-
+.owl-stage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .overview-1,.overview-3{
     background-color: var(--secondary);
