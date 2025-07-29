@@ -11,6 +11,7 @@
     --heading:#282a30;
     --light:#ffffff;
     --text-color:#777c90;
+    --text-color-light:#a4a8ab;
     --text-color-dark:#2b2e2f;
      font-family: 'Manrope', sans-serif !important;
 }
@@ -278,16 +279,29 @@ footer{
     margin: 0 auto;
     padding:2rem 2rem;
     display: grid;
-    grid-template-columns: 1.8fr 0.5fr 1fr 1fr 1fr;
+    grid-template-columns: 1.5fr 0.5fr 1fr 1fr 1fr;
     gap: 1.5rem;
     /* color:var(--light); */
-    color: var(--text-color);
+    color: var(--text-color-light);
     border-bottom: solid 1px var(--text-color);
-    
+}
+.footer-logo img{ 
+    width: 40px;      
+    height: auto;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    text-align: justify;
 }
 .logo-content{
-    padding-right: 1rem;
+    /* padding-right:4rem; */
+    line-height: 1.5rem;
 }
+.company{
+    /* margin-left: 3rem; */}
 .company h3,.industires h3,.products h3,.getintouch h3{
     margin-bottom: 1rem;
     color: var(--light);
@@ -296,7 +310,16 @@ footer{
     padding: 0.5rem 0;
     cursor: pointer;
 }
-
+.footer-icons{
+    margin-top: 1rem;
+}
+.linked-in,.instagram,.facebook{
+    color: var(--light);
+    margin-right: 1.5rem;
+    background-color: var(--text-color);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
 .footer-end{
     max-width: 1400px;
     margin: 0 auto;
@@ -339,6 +362,10 @@ footer{
     .hamburger{ 
         display: block;
     }
+    footer{
+        grid-template-columns:1fr 1fr 1fr;
+        row-gap: 2rem;
+    }
 }
 @media (max-width:772px) {
      .sign-up a{
@@ -368,6 +395,13 @@ footer{
     .main-heading{
         font-size: 1.8rem;
     }
+    footer{
+        grid-template-columns:1fr 1fr;
+        row-gap: 2rem;
+    }
+      .footer-end{
+        gap: 1rem;
+    }
 }
 @media (max-width:480px) {
        .main-heading{
@@ -378,5 +412,11 @@ footer{
         flex-direction: column;
         gap: 1rem;
     }
-    
+      footer{
+        grid-template-columns:1fr;
+        row-gap: 2rem;
+    }
+    .footer-end{
+        gap: 1rem;
+    }
 }
