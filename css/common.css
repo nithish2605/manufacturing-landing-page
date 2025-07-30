@@ -407,6 +407,9 @@ footer{
       .footer-end{
         gap: 1rem;
     }
+    .header-section{
+        padding:1rem 0;
+    }
 }
 @media (max-width:480px) {
        .main-heading{
